@@ -1,0 +1,117 @@
+{
+  "name": "at-work",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.6",
+    "formik": "^2.4.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^8.1.2",
+    "react-router-dom": "^6.15.0",
+    "react-scripts": "5.0.1",
+    "styled-components": "^6.0.7",
+    "yup": "^1.4.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "eject": "react-scripts eject",
+    "format": "prettier —write ."
+  },
+  "homepage": "at-work",
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "airbnb",
+      "react-app",
+      "react-app/jest"
+    ],
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "extensions": [
+            ".ts",
+            ".tsx",
+            ".js",
+            ".jsx",
+            ".json"
+          ]
+        }
+      }
+    },
+    "rules": {
+      "react/jsx-filename-extension": [
+        2,
+        {
+          "extensions": [
+            ".js",
+            ".jsx",
+            ".ts",
+            ".tsx"
+          ]
+        }
+      ],
+      "import/extensions": [
+        "error",
+        "ignorePackages",
+        {
+          "js": "never",
+          "jsx": "never",
+          "ts": "never",
+          "tsx": "never"
+        }
+      ],
+      "import/prefer-default-export": "off",
+      "react/no-array-index-key": "off",
+      "no-shadow": [
+        "error",
+        {
+          "builtinGlobals": false,
+          "hoist": "functions",
+          "allow": [],
+          "ignoreOnInitialization": false
+        }
+      ],
+      "no-return-assign": "off",
+      "default-param-last": "off",
+      "no-param-reassign": [
+        "error",
+        {
+          "props": true,
+          "ignorePropertyModificationsFor": [
+            "state"
+          ]
+        }
+      ]
+    }
+  },
+  "parser": "@typescript-eslint/parser",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@typescript-eslint/parser": "^7.0.0",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^18.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "gh-pages": "^6.1.1",
+    "prettier": "^3.3.3",
+    "typescript": "^4.9.5"
+  }
+}
